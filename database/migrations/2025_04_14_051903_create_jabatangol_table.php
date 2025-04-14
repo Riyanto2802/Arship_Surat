@@ -8,10 +8,10 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('jabatangol', function (Blueprint $table) {
-            $table->increments('id_jabatangol'); // Primary Key & Auto Increment
-            $table->string('jabatan', 255); // Nama jabatan
-            $table->string('golongan', 255); // Nama golongan
-        });
+            $table->increments('id_jabatangol'); // INT & AUTO_INCREMENT & PRIMARY KEY
+            $table->string('jabatan', 255);
+            $table->string('golongan', 255);
+        });        
     }
 
     public function down(): void
